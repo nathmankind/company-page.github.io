@@ -51,6 +51,7 @@ nav li a {
 	color: darkgrey;
 }
 
+
 nav li a:hover {
 	
 	border: 2px solid #2192d8;
@@ -613,7 +614,9 @@ blockquote:before {
 .fa-2x {
     font-size: 1.5em;
 }
-
+/* 
+setting media queries
+*/
 @media screen and (max-width: 1090px) {
 	.menu {
 		margin-left: 0;
