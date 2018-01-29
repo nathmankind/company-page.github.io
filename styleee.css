@@ -30,7 +30,7 @@ html, body {
 .menu {
 	padding-right: 20px;
 	max-width: 70%;
-	margin-left: 10%;
+	margin-left: 20px;
 	margin-top: auto;
 	margin-bottom: auto;
 }
@@ -41,7 +41,7 @@ nav ul {
 nav li {
 	list-style-type: none;
 	display: inline-block;
-	padding: 15px;
+	padding: 10px;
 }
 
 
@@ -202,10 +202,10 @@ hr {
 
 .subscription-cards {
 	display: flex;
-	width: 80%;
-	padding: 10px;
-	margin-left: auto;
-    margin-right: auto;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
     margin-bottom: 50px;
 }
 
@@ -305,9 +305,11 @@ hr {
 .feat-nav ul {
 	list-style-type: none;
 	text-align: center;
-    width: 70%;
+    width: 100%;
+    padding-left: 0;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .feat-nav ul li a {
@@ -315,7 +317,6 @@ hr {
     border: 1px solid #3f95ce;
     margin-left: -5px;
     text-decoration: none;
-    font-size: 1.1em;
     color: #3f95ce;
 }
 
@@ -617,23 +618,143 @@ blockquote:before {
 /* 
 setting media queries
 */
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 1100px) {
 	.menu {
 		margin-left: 0;
 		padding-right: 0;
 	}
-}
-
-@media screen and (max-width: 961px) {
-	.logo {
-		padding-left: 10px;
+	.logo{
+		padding-left: 20px;
 	}
 }
 
-@media screen and (max-width: 901px) {
+@media screen and (max-width: 971px) {
+	.logo {
+		padding-left: 10px;
+	}
+	nav ul {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 914px) {
 	.logo, .menu {
 		width: 100%;
 		max-width: 100%;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.section {
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.section {
+		max-width: 100%;
+		padding: 20px;
+	}
+	.section-icon {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.section-description {
+		padding: 20px;
+	}
+	.card {
+		width: 40%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 1040px) {
+	.card-price h1 {
+		font-size: 2em;
+	}
+	.subscription-card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1038px) {
+	.card {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 870px) {
+	.card {
+		width: 40%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+@media screen and (max-width: 550px) {
+	.card {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+@media screen and (max-width: 640px) {
+	.feat-nav ul li a {
+		padding: .7em .5em;
+	}
+}
+@media screen and (max-width: 510px) {
+	.feat-nav ul li {
+		width: 100%;
+		padding: .7em;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.feat-nav ul li a {
+		padding: .7em;
+	}
+}
+@media screen and (max-width: 700px) {
+	.feat-list {
+		width: 100%;
+	}
+	.feat-img {
+		width: 100%;
+	}
+	.testifier-box {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.enquiry-form {
+		width: 100%;
+	}
+	.enquiry-details {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 660px) {
+	.section-icon {
+		order: 1;
+	}
+	.section-description {
+		order: 2;
+	}
+}
+@media screen and (max-width: 630px) {
+	.content-image p {
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 530px) {
+	.content-image p {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 470px) {
+	button {
+		margin-bottom: 20px;
 	}
 }
